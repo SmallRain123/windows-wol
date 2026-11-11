@@ -49,7 +49,7 @@ uv tool install dist/windows_wol-0.1.0-py3-none-any.whl
 
 ## 🚀 使用方法
 
-> 
+>
 > 两种使用模式：命令行传参（推荐，无需`.env`）；读取`.env`配置，不传参自动加载
 
 ### 唤醒主机
@@ -123,7 +123,6 @@ uv tool uninstall windows-wol
 
 Ubuntu 运行 windows-wol → WOL 魔术包唤醒 P3784 Windows → wait 等待 8090 端口就绪 → MCP 客户端连接 windows-mcp，远程执行 Windows 关机 / 重启操作
 
-```
 
 ### 写入文件命令，直接在终端运行
 ```bash
@@ -144,7 +143,6 @@ UV 管理的局域网WOL唤醒工具，用于远程唤醒 Windows P3784，配套
 - uv 包管理器
 
 ## 📁 项目目录结构
-```
 
 windows-wol/
 ├── pyproject.toml
@@ -155,7 +153,6 @@ windows-wol/
 ├── .env（可选，存放默认 MAC/IP 配置）
 └── dist/        # uv build 打包输出目录
 
-```
 
 ## 🔨 构建 & 安装
 ### 1. 初始化项目虚拟环境
@@ -179,7 +176,7 @@ uv tool install dist/windows_wol-0.1.0-py3-none-any.whl
 
 ## 🚀 使用方法
 
-> 
+>
 > 两种使用模式：命令行传参（推荐，无需`.env`）；读取`.env`配置，不传参自动加载
 
 ### 唤醒主机
@@ -230,7 +227,7 @@ MCP_PORT=8090
 3. **关闭 Windows 快速启动**，快速启动会造成 WOL 唤醒失效
 4. Windows-MCP 服务启动命令：
 
-```
+``` bash
 uvx windows-mcp serve --transport sse --host 0.0.0.0 --port 8090 --auth-key "my-secret-123"
 ```
 
@@ -238,7 +235,7 @@ uvx windows-mcp serve --transport sse --host 0.0.0.0 --port 8090 --auth-key "my-
 
 ## 🗑️ 卸载
 
-```
+``` bash
 uv tool uninstall windows-wol
 ```
 
@@ -252,9 +249,8 @@ uv tool uninstall windows-wol
 ## 🔗 完整联动流程
 
 Ubuntu 运行 windows-wol → WOL 魔术包唤醒 P3784 Windows → wait 等待 8090 端口就绪 → MCP 客户端连接 windows-mcp，远程执行 Windows 关机 / 重启操作
-EOF
 
-```
+
 
 执行上面这条`cat`命令，直接一次性把全部内容写入README.md，写完可以查看：
 ```bash
