@@ -1,4 +1,3 @@
-```
 # windows-wol
 UV 管理的局域网WOL唤醒工具，用于远程唤醒 Windows P3784，配套探测主机在线状态、等待 Windows-MCP 服务端口就绪。
 
